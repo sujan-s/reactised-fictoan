@@ -15,7 +15,7 @@ import {
     FileUpload
 } from '../../assets/fictoan/fictoan'
 import RadioButton from "../../assets/fictoan/components/Form/RadioGroup/RadioButton";
-
+import ProgressBar from '../../assets/fictoan/components/ProgressBar/ProgressBar';
 
 //  SAMPLE CODES  /////////////////////////////////////////////////////////////////////////////////////////////////////
 const egColourScheme=
@@ -129,6 +129,9 @@ class PageInput extends React.PureComponent {
                                 <FormUnit>
                                     <RadioButton name="set1" value="cats"/>
                                     <RadioButton name="set1" value="dogs"/>
+                                </FormUnit>
+                                <FormUnit>
+                                    <ProgressBar percent={30} />
                                 </FormUnit>
                             </Form>
                         </Card>
