@@ -8,10 +8,20 @@ import React from "react";
 
 function ProgressBar(props) {
 	return (
-		<div className={props.wrapperClassName || "progress-bar"}>
+		<div
+			className={
+				props.wrapperClassName
+					? `progress-bar ${props.wrapperClassName}`
+					: "progress-bar"
+			}
+		>
 			<div
-				className={props.fillerClassName || "filler"}
-				style={{ width: `${props.percent}%` }}
+				className={
+					props.fillerClassName
+						? `filler ${props.fillerClassName}`
+						: "filler"
+				}
+				style={{ width: `${props.percent || 0}%` }}
 			/>
 		</div>
 	);
