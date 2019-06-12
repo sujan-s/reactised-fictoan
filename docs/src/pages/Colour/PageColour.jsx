@@ -6,20 +6,20 @@ import {
     Portion,
     Card,
     HRule
-} from '../../assets/fictoan/fictoan'
+} from 'reactised-fictoan'
 
 
 //  SAMPLE CODES  /////////////////////////////////////////////////////////////////////////////////////////////////////
 const egColourUsage=
     `// Background
 <div className="bg-yellow-60"></div>
- 
+
 // Text
 <h3 className="text-green-80">Hello</h3>
- 
+
 // Border
 <button className="border-indigo">Click me</button>
- 
+
 // Fill and stroke
 <svg className="fill-green stroke-amber-60">
     <circle cx="12" cy="12" r="4"/>
@@ -29,7 +29,7 @@ const egColourUsage=
 const egColourScheme=
     `// Primary colour
 $colorHue : $colorAmber; //#fcb83b
- 
+
 // Derived colours
 $colorTint     : lighten($colorHue, 36%);
 $colorShade    : darken($colorHue, 56%);

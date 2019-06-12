@@ -12,17 +12,16 @@ import {
     InputField,
     TextArea,
     InputLabel,
-    FileUpload
-} from '../../assets/fictoan/fictoan'
-import RadioButton from "../../assets/fictoan/components/Form/RadioGroup/RadioButton";
-import RadioGroup from '../../assets/fictoan/components/Form/RadioGroup/RadioGroup';
+    FileUpload,
+    RadioGroup
+} from 'reactised-fictoan'
 
 
 //  SAMPLE CODES  /////////////////////////////////////////////////////////////////////////////////////////////////////
 const egColourScheme=
     `// Primary colour
 $colorHue : $colorAmber; //#fcb83b
- 
+
 // Derived colours
 $colorTint     : lighten($colorHue, 36%);
 $colorShade    : darken($colorHue, 56%);

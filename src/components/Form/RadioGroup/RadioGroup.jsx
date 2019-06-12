@@ -1,5 +1,5 @@
 import React from "react";
-import RadioButton from "./RadioButton";
+import RadioButton from "./RadioButton.jsx";
 import PropTypes from "prop-types";
 
 {
@@ -9,8 +9,8 @@ import PropTypes from "prop-types";
         2. value - Text to be displayed
     2. onChange - Callback, called when radio button state changes
     3. defaultSelected - String, value to be selected by default.
-Example: 
-<RadioGroup options={[{id:'cat',value:'cat'},{id:'dog',value:'dogs'}]} onChange={(selected)=>console.log("I changed!",selected)} /> 
+Example:
+<RadioGroup options={[{id:'cat',value:'cat'},{id:'dog',value:'dogs'}]} onChange={(selected)=>console.log("I changed!",selected)} />
 ***/
 }
 class RadioGroup extends React.Component {

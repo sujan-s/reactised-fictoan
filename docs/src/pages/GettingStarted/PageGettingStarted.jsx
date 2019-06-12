@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Row, Portion } from '../../assets/fictoan/fictoan'
+import { Row, Portion } from 'reactised-fictoan'
 
 
 class PageGettingStarted extends React.PureComponent {

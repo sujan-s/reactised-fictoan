@@ -10,7 +10,7 @@ import {
     InputField,
     InputLabel,
     Button,
-} from '../../assets/fictoan/fictoan'
+} from 'reactised-fictoan'
 
 const exampleCode =
     `<button className="shape-rounded bg-blue text-white shadow-hard">
