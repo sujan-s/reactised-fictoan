@@ -1,0 +1,16 @@
+{
+  "esm/reactised-fictoan.js": {
+    "bundled": 1479,
+    "minified": 1366,
+    "gzipped": 297,
+    "treeshaked": {
+      "rollup": {
+        "code": 871,
+        "import_statements": 871
+      },
+      "webpack": {
+        "code": 2459
+      }
+    }
+  }
+}
