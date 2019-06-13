@@ -4,12 +4,6 @@ import Highlight, {defaultProps} from "prism-react-renderer";
 import {
     Row,
     Portion,
-    Form,
-    FormUnit,
-    FormGroup,
-    InputField,
-    InputLabel,
-    Button,
 } from 'reactised-fictoan'
 
 const exampleCode =

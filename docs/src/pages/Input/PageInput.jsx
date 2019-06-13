@@ -5,7 +5,6 @@ import {
     Row,
     Portion,
     Card,
-    HRule,
     Form,
     FormGroup,
     FormUnit,
