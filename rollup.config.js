@@ -34,7 +34,9 @@ export default {
       exclude: 'node_modules/**',
       plugins: [ 'external-helpers' ]
     }),
-    resolve(),
+    resolve({
+      extensions: [ '.js', '.jsx'],
+    }),
     commonjs(),
     copy([{
       files: 'src/**/*.scss',

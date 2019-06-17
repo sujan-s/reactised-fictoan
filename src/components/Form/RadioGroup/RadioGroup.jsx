@@ -1,5 +1,5 @@
 import React from "react";
-import RadioButton from "./RadioButton.jsx";
+import RadioButton from "./RadioButton";
 import PropTypes from "prop-types";
 
 {
