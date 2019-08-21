@@ -1,4 +1,4 @@
-import React, { HTMLProps, ReactElement, ElementType } from "react";
+import React, { HTMLProps, ElementType } from "react";
 
 export type BaseProps = {
     Element: ElementType<any>;

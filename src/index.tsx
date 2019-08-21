@@ -32,6 +32,7 @@ import RadioButton from "./components/Form/RadioGroup/RadioButton";
 import RadioGroup from "./components/Form/RadioGroup/RadioGroup";
 import BaseBreadcrumb from "./components/Breadcrumbs/Breadcrumb";
 import BaseBreadcrumbItem from "./components/Breadcrumbs/BreadcrumbItem";
+import ProgressBar from "./components/ProgressBar/ProgressBar";
 
 export {
     Row,
@@ -58,5 +59,6 @@ export {
     RadioButton,
     RadioGroup,
     BaseBreadcrumb,
-    BaseBreadcrumbItem
+    BaseBreadcrumbItem,
+    ProgressBar
 };
