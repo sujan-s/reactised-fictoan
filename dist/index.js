@@ -61,21 +61,19 @@ const Row = (_a) => {
 };
 
 const Portion = (_a) => {
-    var { width, className } = _a, props = __rest(_a, ["width", "className"]);
+    var { desktopWidth, mobileWidth, tabletLSWidth, tabletPTWidth, className } = _a, props = __rest(_a, ["desktopWidth", "mobileWidth", "tabletLSWidth", "tabletPTWidth", "className"]);
     const classNames = [className];
-    if (width) {
-        if (width.mobile) {
-            classNames.push(`${width.mobile}-on-mobile`);
-        }
-        if (width.tabletLandscape) {
-            classNames.push(`${width.tabletLandscape}-on-tab-ls`);
-        }
-        if (width.tabletPortrait) {
-            classNames.push(`${width.tabletPortrait}-on-tab-pt`);
-        }
-        if (width.desktop) {
-            classNames.push(width.desktop);
-        }
+    if (desktopWidth) {
+        classNames.push(`${desktopWidth}`);
+    }
+    if (tabletLSWidth) {
+        classNames.push(`${tabletLSWidth}-on-tab-ls`);
+    }
+    if (tabletPTWidth) {
+        classNames.push(`${tabletPTWidth}-on-tab-pt`);
+    }
+    if (mobileWidth) {
+        classNames.push(`${mobileWidth}-on-mobile`);
     }
     else {
         classNames.push("whole");
