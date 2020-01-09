@@ -35,15 +35,21 @@ const createClassName = (classNames) => {
     return classNames.filter((item) => !!item).join(" ");
 };
 
+const ElementStyledForComponent = (component) => styled(component) `
+    ${(props) => props.bgColor && css `{ background-color : ${props.bgColor}; }`}
+    ${(props) => props.textColor && css `{ color : ${props.textColor}; }`}
+    ${(props) => props.borderColor && css `{ border : 2px solid ${props.borderColor}; }`}
+    ${(props) => props.fillColor && css `{ fill : ${props.fillColor}; }`}
+    ${(props) => props.strokeColor && css `{ stroke : ${props.strokeColor}; }`}
+`;
 const Element = (_a) => {
-    var { as: Component, className, size, fullWidth, fullHeight, bgColor, textColor, hideOnMobile, showOnlyOnMobile, hideOnTabPT, showOnlyOnTabPT, hideOnTabLS, showOnlyOnTabLS, hideOnDesktop, showOnlyOnDesktop, marginTop, marginRight, marginBottom, marginLeft, margin, paddingTop, paddingRight, paddingBottom, paddingLeft, padding } = _a, props = __rest(_a, ["as", "className", "size", "fullWidth", "fullHeight", "bgColor", "textColor", "hideOnMobile", "showOnlyOnMobile", "hideOnTabPT", "showOnlyOnTabPT", "hideOnTabLS", "showOnlyOnTabLS", "hideOnDesktop", "showOnlyOnDesktop", "marginTop", "marginRight", "marginBottom", "marginLeft", "margin", "paddingTop", "paddingRight", "paddingBottom", "paddingLeft", "padding"]);
-    return (React.createElement(Component, Object.assign({}, props, { className: createClassName([
+    var { as: Component, className, size, fullWidth, fullHeight, bgColor, textColor, borderColor, fillColor, strokeColor, hideOnMobile, showOnlyOnMobile, hideOnTabPT, showOnlyOnTabPT, hideOnTabLS, showOnlyOnTabLS, hideOnDesktop, showOnlyOnDesktop, marginTop, marginRight, marginBottom, marginLeft, margin, paddingTop, paddingRight, paddingBottom, paddingLeft, padding } = _a, props = __rest(_a, ["as", "className", "size", "fullWidth", "fullHeight", "bgColor", "textColor", "borderColor", "fillColor", "strokeColor", "hideOnMobile", "showOnlyOnMobile", "hideOnTabPT", "showOnlyOnTabPT", "hideOnTabLS", "showOnlyOnTabLS", "hideOnDesktop", "showOnlyOnDesktop", "marginTop", "marginRight", "marginBottom", "marginLeft", "margin", "paddingTop", "paddingRight", "paddingBottom", "paddingLeft", "padding"]);
+    const ComponentStyled = ElementStyledForComponent(Component);
+    return (React.createElement(ComponentStyled, Object.assign({}, props, { className: createClassName([
             className,
             size && `size-${size}`,
             fullWidth && "full-width",
             fullHeight && "full-height",
-            bgColor && `bg-${bgColor}`,
-            textColor && `text-${textColor}`,
             hideOnMobile && "hide-on-mobile",
             showOnlyOnMobile && "show-only-on-mobile",
             showOnlyOnTabPT && "hide-on-tab-pt",
@@ -2115,6 +2121,19 @@ const RFTheme = {
 
 const GlobalStyled = createGlobalStyle `
     ${normalize}
+
+    /*  Colour of highlight and text colour
+    - for Firefox browsers  */
+    ::-moz-selection {
+        background : $textHighlightBG;
+        color      : $textHighlightColor;
+    }
+    //  Same thing - for Webkit browsers
+    ::selection {
+        background : $textHighlightBG;
+        color      : $textHighlightColor;
+    }
+
 
     // Layout
     html,
