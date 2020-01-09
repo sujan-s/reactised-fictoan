@@ -18,7 +18,7 @@
     "scripts": {
         "start": "rollup -c -w",
         "build": "rollup -c",
-        "predeploy": "$npm_execpath run build && gh-pages -d dist -e dist && gh-pages -a -d . -s ./package.json",
+        "predeploy": "$npm_execpath run build && gh-pages -d dist -e dist && gh-pages -a -d . -s ./package.json ./gitignore ./README.md",
         "deploy": "git checkout gh-pages && $npm_execpath run publish"
     },
     "eslintConfig": {
