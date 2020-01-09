@@ -1,6 +1,2 @@
-import { PureComponent } from "react";
-import { InputFieldProps } from "./typings";
-declare class InputField extends PureComponent<InputFieldProps> {
-    render(): JSX.Element;
-}
-export default InputField;
+import { InputFieldProps } from "./constants";
+export declare const InputField: (props: InputFieldProps) => JSX.Element;

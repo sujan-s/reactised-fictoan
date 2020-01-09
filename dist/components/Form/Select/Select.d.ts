@@ -1,8 +1,2 @@
-import { HTMLProps } from "react";
-declare type SelectProps = HTMLProps<HTMLSelectElement>;
-interface Props extends SelectProps {
-    options: HTMLProps<HTMLOptionElement>[];
-    fullWidth?: boolean;
-}
-declare const Select: ({ fullWidth, className, options, ...props }: Props) => JSX.Element;
-export default Select;
+import { SelectProps } from "./constants";
+export declare const Select: ({ fullWidth, className, options, ...props }: SelectProps) => JSX.Element;

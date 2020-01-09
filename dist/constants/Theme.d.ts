@@ -37,6 +37,19 @@ export declare const RFTheme: {
         bg: string;
         border: string;
     };
+    infoPanel: {
+        bg: string;
+        border: string;
+    };
+    breadcrumb: {
+        wrapper: {
+            bg: string;
+        };
+        item: {
+            text: string;
+            separator: string;
+        };
+    };
     code: {
         inline: {
             bg: string;

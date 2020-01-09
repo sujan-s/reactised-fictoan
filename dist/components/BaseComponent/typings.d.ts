@@ -1,7 +1,9 @@
 import { HTMLProps } from "react";
 import { RFTheme } from "src/constants/Theme";
-export interface BaseProps {
+export interface ThemeProps {
     theme?: typeof RFTheme;
+}
+export interface BaseProps extends ThemeProps {
     bgColor?: string;
     textColor?: string;
     hideOnMobile?: boolean;

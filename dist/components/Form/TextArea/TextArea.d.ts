@@ -1,3 +1,2 @@
-import { TextAreaProps } from "./typings";
-declare const TextArea: (props: TextAreaProps) => JSX.Element;
-export default TextArea;
+import { TextareaProps } from "./constants";
+export declare const Textarea: (props: TextareaProps) => JSX.Element;

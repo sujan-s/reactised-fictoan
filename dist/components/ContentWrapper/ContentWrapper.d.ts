@@ -1,3 +1,2 @@
-import React from "react";
-declare const ContentWrapper: (props: React.HTMLProps<HTMLDivElement>) => JSX.Element;
-export default ContentWrapper;
+import { CommonAndHTMLProps } from "../Element/constants";
+export declare const ContentWrapper: (props: CommonAndHTMLProps<HTMLDivElement>) => JSX.Element;

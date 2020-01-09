@@ -1,2 +1,1 @@
-import { ThemeProviderProps } from "./constants";
-export declare const ThemeProvider: ({ theme, ...props }: ThemeProviderProps) => JSX.Element;
+export declare const ThemeProvider: ({ theme, children, ...props }: import("../Element/constants").CommonAndHTMLProps<HTMLDivElement>) => JSX.Element;

@@ -1,5 +1,4 @@
-import { BaseAndHTMLProps } from "../BaseComponent/typings";
+import { CommonAndHTMLProps, ThemeProps } from "../Element/constants";
 export declare type ThemeProviderElementType = HTMLDivElement;
-export interface ThemeProviderCustomProps {
-}
-export declare type ThemeProviderProps = BaseAndHTMLProps<ThemeProviderElementType> & ThemeProviderCustomProps;
+export declare type ThemeProviderProps = CommonAndHTMLProps<ThemeProviderElementType>;
+export declare type GlobalStyledProps = ThemeProps;
