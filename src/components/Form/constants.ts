@@ -15,4 +15,3 @@ export type FormWrapperProps        = CommonAndHTMLProps<FormWrapperProps>;
 export type FormItemProps           = CommonAndHTMLProps<FormItemProps> & FormItemCustomProps;
 export type FormItemGroupProps      = CommonAndHTMLProps<FormItemGroupProps>;
 export type FormItemJointGroupProps = CommonAndHTMLProps<FormItemJointGroupProps>;
-export type SelectProps             = CommonAndHTMLProps<SelectProps>;
